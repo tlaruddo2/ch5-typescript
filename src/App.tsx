@@ -7,8 +7,11 @@ import { SideBar } from "./components/sidebar";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
 import { Watch } from "@mui/icons-material";
 import { Home } from "./components/pages/home";
-import { Light } from "./components/pages/light";
+import { Lights } from "./components/pages/light";
 import { Climate } from "./components/pages/climate";
+import { Cameras } from "./components/pages/cameras";
+import { Shades } from "./components/pages/shades";
+// import { Security } from "./components/pages/security";
 
 function App() {
   return (
@@ -16,11 +19,14 @@ function App() {
     <MemoryRouter>
       <Routes>
         <Route path="/" element={<SideBar />}>
-          <Route path="" element={<Home />} />
-          <Route path="watch" element={<Watch />} />
+          <Route path="/" element={<Home />} />
+          <Route path="home" element={<Home />} />
           <Route path="listen" element={<Listen />} />
-          <Route path="lights" element={<Light />} />
+          <Route path="lights" element={<Lights />} />
           <Route path="climate" element={<Climate />} />
+          <Route path="shades" element={<Shades />} />
+          <Route path="cameras" element={<Cameras />} />
+          {/* <Route path="security" element={<Security />} /> */}
         </Route>
       </Routes>
     </MemoryRouter>

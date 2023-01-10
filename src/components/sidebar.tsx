@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 //make constnat file later
 const pages = [
-  "WATCH",
+  "HOME",
   "LISTEN",
   "LIGHTS",
   "CLIMATE",

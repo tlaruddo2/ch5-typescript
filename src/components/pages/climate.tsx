@@ -5,7 +5,7 @@ type Props = {};
 
 export const Climate = (props: Props) => {
   return (
-    <Box sx={{ marginLeft: 25 }}>
+    <Box sx={{ marginLeft: { xs: 8, sm: 25 } }}>
       <Typography>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sunt
         ratione aut consequatur ipsa dolores sed eum asperiores, nostrum placeat
