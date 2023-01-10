@@ -5,7 +5,7 @@ type Props = {};
 
 export const Listen = (props: Props) => {
   return (
-    <Box>
+    <Box sx={{ marginLeft: 25 }}>
       <Typography>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aliquid
         repellendus neque repellat cupiditate fuga voluptates maiores? Cum,
