@@ -6,6 +6,9 @@ import { Listen } from "./components/pages/listen";
 import { SideBar } from "./components/sidebar";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
 import { Watch } from "@mui/icons-material";
+import { Home } from "./components/pages/home";
+import { Light } from "./components/pages/light";
+import { Climate } from "./components/pages/climate";
 
 function App() {
   return (
@@ -13,10 +16,11 @@ function App() {
     <MemoryRouter>
       <Routes>
         <Route path="/" element={<SideBar />}>
-          <Route path="" element={<Listen />} />
+          <Route path="" element={<Home />} />
           <Route path="watch" element={<Watch />} />
-          {/* <SideBar />
-          <First title={"hihi"} /> */}
+          <Route path="listen" element={<Listen />} />
+          <Route path="lights" element={<Light />} />
+          <Route path="climate" element={<Climate />} />
         </Route>
       </Routes>
     </MemoryRouter>

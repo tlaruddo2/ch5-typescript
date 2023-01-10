@@ -6,7 +6,12 @@ type Props = {};
 export const Listen = (props: Props) => {
   return (
     <Box>
-      <Typography>heading</Typography>
+      <Typography>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aliquid
+        repellendus neque repellat cupiditate fuga voluptates maiores? Cum,
+        maxime. Illum provident nobis impedit, sint eius sequi dolorem veniam
+        minus nisi.
+      </Typography>
     </Box>
   );
 };
