@@ -14,7 +14,7 @@ interface LayoutProps {
 
 export const Layout = (props: LayoutProps) => {
   return (
-    <Box sx={{ display: "flex", width: "100%", height: "100%" }}>
+    <Box sx={{ display: "flex", width: "100%", height: "100%", p: 1 }}>
       <Box
         sx={{
           display: { xs: "none", sm: "flex" },
