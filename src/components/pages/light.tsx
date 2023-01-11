@@ -10,9 +10,9 @@ export const Lights = (props: Props) => {
   return (
     <Layout title={PAGES.lights}>
       <Stack direction="row">
-        <LightSlider />
-        <LightSlider />
-        <LightSlider />
+        <LightSlider id={0} />
+        <LightSlider id={1} />
+        <LightSlider id={2} />
       </Stack>
     </Layout>
   );
