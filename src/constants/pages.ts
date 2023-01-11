@@ -7,6 +7,7 @@ interface PageJSON {
   shades: string;
   cameras: string;
   security: string;
+  error: string;
 }
 
 export const PAGES: PageJSON = {
@@ -17,4 +18,5 @@ export const PAGES: PageJSON = {
   shades: "SHADES",
   cameras: "CAMERAS",
   security: "SECURITY",
+  error: "Error",
 };
