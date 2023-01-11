@@ -1,4 +1,4 @@
-interface PageJSON {
+interface PageJSON {  //??
   watch: string;
   listen: string;
   lights: string;
