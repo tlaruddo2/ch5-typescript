@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Drawer, Toolbar, Divider, Typography, List } from "@mui/material";
 import { DrawerContents } from "./drawer-contents";
-import { PAGES } from "../constants/pages";
+import { PAGES } from "../../constants/pages";
 import { watch } from "fs";
 import { Outlet } from "react-router-dom";
 import ListItem from "@mui/material/ListItem";
@@ -29,7 +29,7 @@ export const SideBar = (props: Props) => {
         variant="permanent"
         sx={{
           display: { xs: "none", sm: "flex" },
-          ".MuiDrawer-paper": { boxSizing: "border-box", width: 200 },
+          ".MuiDrawer-paper": { boxSizing: "border-box", width: "15%" },
         }}
       >
         <DrawerContents page={pages} />
@@ -40,7 +40,7 @@ export const SideBar = (props: Props) => {
         sx={{
           padding: 0,
           display: { xs: "flex", sm: "none" },
-          ".MuiDrawer-paper": { boxSizing: "border-box", width: 60 },
+          ".MuiDrawer-paper": { boxSizing: "border-box", width: "10%" },
         }}
       >
         <Toolbar />

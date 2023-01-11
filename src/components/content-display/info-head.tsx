@@ -10,7 +10,7 @@ interface Props {}
 //same
 export const InfoHead: React.FC<Props> = props => {
   return (
-    <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
+    <Box sx={{ display: "flex", justifyContent: "space-between" }}>
       <CurrentDate />
       <CurrentTime />
       <CurrentWeather />

@@ -5,7 +5,7 @@ type Props = {};
 export const CurrentWeather = (props: Props) => {
   return (
     <Box sx={{ marginLeft: 5 }}>
-      <Typography>temp</Typography>
+      <Typography>weather</Typography>
     </Box>
   );
 };

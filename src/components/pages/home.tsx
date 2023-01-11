@@ -1,18 +1,11 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { InfoHead } from "../content-display/info-head";
+import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
 type Props = {};
 
 export const Home = (props: Props) => {
-  return (
-    <Box
-      sx={{
-        marginLeft: { xs: 8, sm: 25 },
-        display: "block",
-      }}
-    >
-      <InfoHead />
-    </Box>
-  );
+  return <Layout title={PAGES.home}>Home Page</Layout>;
 };

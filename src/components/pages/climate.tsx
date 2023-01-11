@@ -1,17 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
-type Props = {};
+interface Props {}
 
 export const Climate = (props: Props) => {
-  return (
-    <Box sx={{ marginLeft: { xs: 8, sm: 25 } }}>
-      <Typography>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, sunt
-        ratione aut consequatur ipsa dolores sed eum asperiores, nostrum placeat
-        quam accusamus harum sit temporibus quo mollitia. Praesentium, id
-        cumque.
-      </Typography>
-    </Box>
-  );
+  return <Layout title={PAGES.climate}>Climate Pages</Layout>;
 };

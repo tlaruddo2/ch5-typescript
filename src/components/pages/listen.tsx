@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
 interface Props {
   // children: JSX.Element;
@@ -8,13 +9,8 @@ interface Props {
 
 export const Listen = (props: Props) => {
   return (
-    <Layout>
-      <Typography>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aliquid
-        repellendus neque repellat cupiditate fuga voluptates maiores? Cum,
-        maxime. Illum provident nobis impedit, sint eius sequi dolorem veniam
-        minus nisi.
-      </Typography>
+    <Layout title={PAGES.listen}>
+      <Typography>Listen Page</Typography>
     </Layout>
   );
 };

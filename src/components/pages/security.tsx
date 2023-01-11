@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
-type Props = {};
+interface Props {}
 
 export const Security = (props: Props) => {
-  return (
-    <Box sx={{ marginLeft: { xs: 8, sm: 25 } }}>
-      <Typography>Security page</Typography>
-    </Box>
-  );
+  return <Layout title={PAGES.security}>Security</Layout>;
 };

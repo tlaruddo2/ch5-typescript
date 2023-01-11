@@ -1,17 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
-type Props = {};
+interface Props {}
 
 export const Lights = (props: Props) => {
-  return (
-    <Box sx={{ marginLeft: { xs: 8, sm: 25 } }}>
-      <Typography>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-        pariatur tempora cum ratione quod illum nihil? Beatae odio laborum unde
-        quae eligendi. Cum cumque aspernatur corporis incidunt, nam rem
-        laboriosam.
-      </Typography>
-    </Box>
-  );
+  return <Layout title={PAGES.lights}>Light Page</Layout>;
 };

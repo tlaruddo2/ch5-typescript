@@ -1,5 +1,6 @@
-interface PageJSON {  //??
-  watch: string;
+interface PageJSON {
+  //??
+  home: string;
   listen: string;
   lights: string;
   climate: string;
@@ -9,7 +10,7 @@ interface PageJSON {  //??
 }
 
 export const PAGES: PageJSON = {
-  watch: "WATCH",
+  home: "HOME",
   listen: "LISTEN",
   lights: "LIGHTS",
   climate: "CLIMATE",

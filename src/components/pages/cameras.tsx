@@ -1,12 +1,10 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { Layout } from "../layout/layout";
+import { PAGES } from "../../constants/pages";
 
-type Props = {};
+interface Props {}
 
 export const Cameras = (props: Props) => {
-  return (
-    <Box sx={{ marginLeft: { xs: 8, sm: 25 } }}>
-      <Typography>Cameras page</Typography>
-    </Box>
-  );
+  return <Layout title={PAGES.cameras}>Camera Page</Layout>;
 };
