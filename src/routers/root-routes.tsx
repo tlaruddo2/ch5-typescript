@@ -11,20 +11,25 @@ import { Shades } from "../components/pages/shades";
 import { Security } from "../components/pages/security";
 import { SideBar } from "../components/navigations/sidebar";
 import { ListenRoute } from "./routes/listen-route";
-// import { Listen } from "../components/pages/listen";
+import { HomeRoute } from "./routes/home-route";
+import { Listen } from "../components/pages/listen";
+import { LightRoute } from "./routes/light-route";
+import { ClimateRoute } from "./routes/climate-route";
+import { CameraRoute } from "./routes/shade-route";
+import { ShadeRoute } from "./routes/camera-route";
+import { SecurityRoute } from "./routes/security-route";
 
 export const RootRouter = createMemoryRouter(
   createRoutesFromElements(
     <Route path="/" element={<SideBar />}>
       <Route path="/" element={<Home />} />
-      <Route path="home" element={<Home />} />
-      {/* <Route path="listen" element={<Listen />} /> */}
-      <ListenRoute />
-      <Route path="lights" element={<Lights />} />
-      <Route path="climate" element={<Climate />} />
-      <Route path="shades" element={<Shades />} />
-      <Route path="cameras" element={<Cameras />} />
-      <Route path="security" element={<Security />} />
+      {HomeRoute}
+      {ListenRoute}
+      {LightRoute}
+      {ClimateRoute}
+      {ShadeRoute}
+      {CameraRoute}
+      {SecurityRoute}
     </Route>
   )
 );
