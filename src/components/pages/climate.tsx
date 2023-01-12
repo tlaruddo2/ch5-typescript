@@ -18,7 +18,6 @@ export const Climate = (props: Props) => {
   }
 
   const product1 = data.products[0];
-
   console.log(data.products);
 
   return <Layout title={PAGES.climate}>{product1.title}</Layout>;
