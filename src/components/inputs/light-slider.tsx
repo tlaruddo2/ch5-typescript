@@ -4,11 +4,11 @@ import ArrowDropUpIcon from "@mui/icons-material/ArrowDropUp";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import { useLight } from "../../hooks/useLight";
 
-interface Props {
+interface LightSliderProps {
   id: number;
 }
 
-export const LightSlider = (props: Props) => {
+export const LightSlider = (props: LightSliderProps) => {
   // const [light, setLight] = useState(10);
   const [value, up, down, changeByValue] = useLight(props.id);
   console.log(`id: ${props.id}`);
