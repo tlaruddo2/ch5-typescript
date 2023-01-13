@@ -4,7 +4,6 @@ import Button from "@mui/material/Button";
 interface CustomButtonProps {
   contents: string;
   href: string;
-  // variant: string;
 }
 
 export const CustomButton = (props: CustomButtonProps) => {
