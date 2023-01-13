@@ -4,6 +4,10 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 export default {
   title: "Actions/CustomButton",
   component: CustomButton,
+  //   https://storybook.js.org/docs/react/api/argtypes
+  //   argTypes : {
+
+  //   }
 };
 
 const Template: ComponentStory<typeof CustomButton> = args => (
