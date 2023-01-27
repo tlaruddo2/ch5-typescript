@@ -9,10 +9,10 @@ import { TitleHead } from "../content-display/title-head";
 interface LayoutProps {
   title: string;
   subtitle?: string;
-  children: JSX.Element | string;
+  children: JSX.Element | JSX.Element[] | string | string[];
 }
 
-export const Layout = (props: LayoutProps) => {
+export const Layout = ({ title, subtitle, children }: LayoutProps) => {
   return (
     <Box sx={{ display: "flex", width: "100%", height: "100%", p: 1 }}>
       <Box
@@ -32,8 +32,8 @@ export const Layout = (props: LayoutProps) => {
       <Box>
         <InfoHead />
 
-        <TitleHead title={props.title} subtitle={"empty subtitle"} />
-        {props.children}
+        <TitleHead title={title} subtitle={"empty subtitle"} />
+        {children}
       </Box>
     </Box>
   );

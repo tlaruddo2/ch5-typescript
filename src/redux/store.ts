@@ -19,5 +19,6 @@ export const store = configureStore({
 setupListeners(store.dispatch);
 //Define RootState and Dispatch Types
 //https://react-redux.js.org/using-react-redux/usage-with-typescript
+//store.getState: return current state of Redux store
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
